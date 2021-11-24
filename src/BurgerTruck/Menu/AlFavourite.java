@@ -5,30 +5,27 @@ import BurgerTruck.Builder.BurgerBuilder;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class BeefBurger extends BurgerBuilder {
+public class AlFavourite extends BurgerBuilder {
 
-
-    @Override
     public void buildBun() {
-        burger.setBun("milk bun");
+        burger.setBun("Burger Bun");
     }
 
-    @Override
     public void buildSauce() {
-        burger.setSauce("hot sauce");
+        burger.setSauce("BBQ");
     }
 
-    @Override
     public void buildPatty() {
-        burger.setMeatPatty(true);
+
     }
 
-    @Override
     public void buildToppings() {
         ArrayList<String> toppings = new ArrayList<>();
 
-        Collections.addAll(toppings, "lettuce", "tomato", "cheese");
+        Collections.addAll(toppings, "cheese", "onions", "chicken");
 
         burger.setToppings(toppings);
     }
+
+
 }

@@ -15,12 +15,11 @@ public class Server {
         return burgerBuilder.getBurger();
     }
 
-    public void constructPizza() {
+    public void makeBurger() {
         burgerBuilder.createNewBurger();
         burgerBuilder.buildBun();
         burgerBuilder.buildSauce();
         burgerBuilder.buildPatty();
         burgerBuilder.buildToppings();
     }
-
 }

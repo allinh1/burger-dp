@@ -39,4 +39,14 @@ public class Burger {
     public void setToppings(ArrayList<String> toppings) {
         this.toppings = toppings;
     }
+
+    @Override
+    public String toString() {
+        return "Burger{" +
+                "bun='" + bun + '\'' +
+                ", sauce='" + sauce + '\'' +
+                ", meatPatty=" + meatPatty +
+                ", toppings=" + toppings +
+                '}';
+    }
 }
