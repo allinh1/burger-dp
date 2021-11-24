@@ -1,25 +1,26 @@
 package BurgerTruck.Builder;
 
 public class Server {
-//    private PizzaBuilder pizzaBuilder;
-//
-//    public void setPizzaBuilder(PizzaBuilder pizzaBuilder) {
-//        this.pizzaBuilder = pizzaBuilder;
-//    }
-//
-//    public PizzaBuilder getPizzaBuilder() {
-//        return pizzaBuilder;
-//    }
-//
-//    public Pizza getPizza() {
-//        return pizzaBuilder.getPizza();
-//    }
-//
-//    public void constructPizza() {
-//        pizzaBuilder.createNewPizza();
-//        pizzaBuilder.buildCrust();
-//        pizzaBuilder.buildSauce();
-//        pizzaBuilder.buildToppings();
-//    }
+    private BurgerBuilder burgerBuilder;
+
+    public void setBurgerBuilder(BurgerBuilder burgerBuilder) {
+        this.burgerBuilder = burgerBuilder;
+    }
+
+    public BurgerBuilder getBurgerBuilder() {
+        return burgerBuilder;
+    }
+
+    public Burger getBurger() {
+        return burgerBuilder.getBurger();
+    }
+
+    public void constructPizza() {
+        burgerBuilder.createNewBurger();
+        burgerBuilder.buildBun();
+        burgerBuilder.buildSauce();
+        burgerBuilder.buildPatty();
+        burgerBuilder.buildToppings();
+    }
 
 }
